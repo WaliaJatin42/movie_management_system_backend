@@ -1244,3 +1244,18 @@
     "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTk5ODAsImV4cCI6MTc0NzQwNDc4MH0.M_wA7TbiI6SkUnlLVyRN7uJ0LMvgdXCj9ioKQfs5lmI"
   }
 }
+2025-05-09 20:31:52 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/logout/",
+  "params": {},
+  "query": {},
+  "body": {
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTk5ODAsImV4cCI6MTc0NzQwNDc4MH0.M_wA7TbiI6SkUnlLVyRN7uJ0LMvgdXCj9ioKQfs5lmI"
+  }
+}
+2025-05-09 20:31:52 info: {
+  "status": 200,
+  "body": {
+    "message": "Logged out successfully"
+  }
+}
