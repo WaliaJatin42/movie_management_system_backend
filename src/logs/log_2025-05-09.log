@@ -352,3 +352,895 @@
     }
   }
 }
+2025-05-09 17:25:44 info: {
+  "method": "POST",
+  "url": "/api/v1/users/login",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 17:27:29 info: {
+  "method": "POST",
+  "url": "/api/v1/users/login",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "admin_user",
+    "password": "Test@123"
+  }
+}
+2025-05-09 17:28:58 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 17:28:59 info: {
+  "status": 200,
+  "body": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTE5MzksImV4cCI6MTc0Njg3ODMzOX0.ao5Rep5qOyHaocps31DkgfImQxZqGSABE4mHlgTHfTU",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTE5MzksImV4cCI6MTc0NzM5NjczOX0.Y_XQlj2A0Xvzk2kEoqoBwt0L1Ee812OXTlnnbsMJm_s"
+  }
+}
+2025-05-09 17:32:24 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "new_admin",
+    "email": "newadmin@example.com",
+    "password": "Admin@1234",
+    "role": "admin",
+    "first_name": "John",
+    "last_name": "Doe",
+    "phone_number": "1234567890"
+  }
+}
+2025-05-09 17:32:24 info: {
+  "status": 401,
+  "body": {
+    "message": "Authentication token missing"
+  }
+}
+2025-05-09 17:39:36 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_all_users/",
+  "params": {},
+  "query": {}
+}
+2025-05-09 17:40:27 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_all_users/",
+  "params": {},
+  "query": {}
+}
+2025-05-09 17:40:27 info: {
+  "status": 200,
+  "body": {
+    "count": 2,
+    "data": [
+      {
+        "_id": "681de65897381bd6d1240eda",
+        "username": "jatin_super",
+        "role": "superadmin",
+        "first_name": "Jatin",
+        "last_name": "Walia",
+        "phone_number": "9690604811",
+        "created_at": "2025-05-09T11:26:16.230Z",
+        "user_id": 1,
+        "__v": 0
+      },
+      {
+        "_id": "681dec76243961b8a30c9931",
+        "username": "admin_user",
+        "role": "admin",
+        "first_name": "Admin",
+        "last_name": "User",
+        "phone_number": "7248744909",
+        "created_at": "2025-05-09T11:52:22.410Z",
+        "user_id": 2,
+        "__v": 0
+      }
+    ]
+  }
+}
+2025-05-09 17:44:32 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_all_users/",
+  "params": {},
+  "query": {}
+}
+2025-05-09 17:44:32 info: {
+  "status": 200,
+  "body": {
+    "page": 1,
+    "limit": 10,
+    "total": 2,
+    "totalPages": 1,
+    "data": [
+      {
+        "_id": "681de65897381bd6d1240eda",
+        "username": "jatin_super",
+        "role": "superadmin",
+        "first_name": "Jatin",
+        "last_name": "Walia",
+        "phone_number": "9690604811",
+        "created_at": "2025-05-09T11:26:16.230Z",
+        "user_id": 1,
+        "__v": 0
+      },
+      {
+        "_id": "681dec76243961b8a30c9931",
+        "username": "admin_user",
+        "role": "admin",
+        "first_name": "Admin",
+        "last_name": "User",
+        "phone_number": "7248744909",
+        "created_at": "2025-05-09T11:52:22.410Z",
+        "user_id": 2,
+        "__v": 0
+      }
+    ]
+  }
+}
+2025-05-09 17:45:11 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_all_users/",
+  "params": {},
+  "query": {}
+}
+2025-05-09 17:45:11 info: {
+  "status": 200,
+  "body": {
+    "total": 2,
+    "data": [
+      {
+        "_id": "681de65897381bd6d1240eda",
+        "username": "jatin_super",
+        "role": "superadmin",
+        "first_name": "Jatin",
+        "last_name": "Walia",
+        "phone_number": "9690604811",
+        "created_at": "2025-05-09T11:26:16.230Z",
+        "user_id": 1,
+        "__v": 0
+      },
+      {
+        "_id": "681dec76243961b8a30c9931",
+        "username": "admin_user",
+        "role": "admin",
+        "first_name": "Admin",
+        "last_name": "User",
+        "phone_number": "7248744909",
+        "created_at": "2025-05-09T11:52:22.410Z",
+        "user_id": 2,
+        "__v": 0
+      }
+    ]
+  }
+}
+2025-05-09 17:46:11 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_all_users/",
+  "params": {},
+  "query": {}
+}
+2025-05-09 17:46:11 info: {
+  "status": 200,
+  "body": {
+    "total_records": 2,
+    "data": [
+      {
+        "_id": "681de65897381bd6d1240eda",
+        "username": "jatin_super",
+        "role": "superadmin",
+        "first_name": "Jatin",
+        "last_name": "Walia",
+        "phone_number": "9690604811",
+        "created_at": "2025-05-09T11:26:16.230Z",
+        "user_id": 1,
+        "__v": 0
+      },
+      {
+        "_id": "681dec76243961b8a30c9931",
+        "username": "admin_user",
+        "role": "admin",
+        "first_name": "Admin",
+        "last_name": "User",
+        "phone_number": "7248744909",
+        "created_at": "2025-05-09T11:52:22.410Z",
+        "user_id": 2,
+        "__v": 0
+      }
+    ]
+  }
+}
+2025-05-09 17:46:48 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_all_users?page=1&limit=5",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "5"
+  }
+}
+2025-05-09 17:46:48 info: {
+  "status": 200,
+  "body": {
+    "total_records": 2,
+    "data": [
+      {
+        "_id": "681de65897381bd6d1240eda",
+        "username": "jatin_super",
+        "role": "superadmin",
+        "first_name": "Jatin",
+        "last_name": "Walia",
+        "phone_number": "9690604811",
+        "created_at": "2025-05-09T11:26:16.230Z",
+        "user_id": 1,
+        "__v": 0
+      },
+      {
+        "_id": "681dec76243961b8a30c9931",
+        "username": "admin_user",
+        "role": "admin",
+        "first_name": "Admin",
+        "last_name": "User",
+        "phone_number": "7248744909",
+        "created_at": "2025-05-09T11:52:22.410Z",
+        "user_id": 2,
+        "__v": 0
+      }
+    ]
+  }
+}
+2025-05-09 17:49:25 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 17:49:25 info: {
+  "status": 200,
+  "body": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTMxNjUsImV4cCI6MTc0Njg3OTU2NX0.6VlgsndH-IJR6qZQxtydHc5ZxTxHBddE6t-2h_u2AgM",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTMxNjUsImV4cCI6MTc0NzM5Nzk2NX0.NIpT3pBqoNJNV0dq-K5RxaN55DGjxGfYTbNulz3SuUk"
+  }
+}
+2025-05-09 17:50:39 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "test_user",
+    "email": "test_user@gmail.com",
+    "first_name": "Test",
+    "last_name": "User",
+    "password": "Test@123",
+    "role": "user",
+    "phone_number": "7248741289"
+  }
+}
+2025-05-09 17:50:40 info: {
+  "status": 200,
+  "body": {
+    "message": "User created successfully",
+    "data": {
+      "username": "test_user",
+      "role": "user",
+      "first_name": "Test",
+      "last_name": "User",
+      "password": "$2b$10$Wlz0KW0nhaqCCPflHL8bfOF/hODOaDxivQi89q5tcu9Dkz.vyBA.q",
+      "phone_number": "7248741289",
+      "_id": "681df31888b03af65e636912",
+      "created_at": "2025-05-09T12:20:40.032Z",
+      "user_id": 3,
+      "__v": 0
+    }
+  }
+}
+2025-05-09 18:15:52 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details/1",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:15:52 warn: getUserById Validation failed:
+2025-05-09 18:15:52 info: {
+  "status": 400,
+  "body": {
+    "message": "Missing or invalid parameters",
+    "error": {
+      "user_id": [
+        "Required"
+      ]
+    }
+  }
+}
+2025-05-09 18:16:37 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details/1",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:16:37 info: {
+  "status": 404,
+  "body": {
+    "message": "User not found"
+  }
+}
+2025-05-09 18:16:38 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details/1",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:16:38 info: {
+  "status": 404,
+  "body": {
+    "message": "User not found"
+  }
+}
+2025-05-09 18:18:16 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details/1",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:18:16 info: {
+  "status": 404,
+  "body": {
+    "message": "User not found"
+  }
+}
+2025-05-09 18:18:26 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details/1",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:18:26 warn: getUserById Validation failed:
+2025-05-09 18:18:26 info: {
+  "status": 400,
+  "body": {
+    "message": "Missing or invalid parameters",
+    "error": {
+      "user_id": [
+        "Required"
+      ]
+    }
+  }
+}
+2025-05-09 18:19:38 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details/1",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:19:38 warn: getUserById Validation failed:
+2025-05-09 18:19:38 info: {
+  "status": 400,
+  "body": {
+    "message": "Missing or invalid parameters",
+    "error": {
+      "user_id": [
+        "Required"
+      ]
+    }
+  }
+}
+2025-05-09 18:20:02 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details/681de65897381bd6d1240eda",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:20:02 warn: getUserById Validation failed:
+2025-05-09 18:20:02 info: {
+  "status": 400,
+  "body": {
+    "message": "Missing or invalid parameters",
+    "error": {
+      "user_id": [
+        "Required"
+      ]
+    }
+  }
+}
+2025-05-09 18:20:23 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details?user_id=1",
+  "params": {},
+  "query": {
+    "user_id": "1"
+  }
+}
+2025-05-09 18:20:32 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details/?user_id=1",
+  "params": {},
+  "query": {
+    "user_id": "1"
+  }
+}
+2025-05-09 18:20:48 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details/1",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:20:48 warn: getUserById Validation failed:
+2025-05-09 18:20:48 info: {
+  "status": 400,
+  "body": {
+    "message": "Missing or invalid parameters",
+    "error": {
+      "user_id": [
+        "Required"
+      ]
+    }
+  }
+}
+2025-05-09 18:22:23 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details/1",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:22:23 warn: getUserById Validation failed:
+2025-05-09 18:22:23 info: {
+  "status": 400,
+  "body": {
+    "message": "Missing or invalid parameters",
+    "error": {
+      "user_id": [
+        "Required"
+      ]
+    }
+  }
+}
+2025-05-09 18:22:59 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details/1",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:22:59 warn: getUserById Validation failed:
+2025-05-09 18:22:59 info: {
+  "status": 400,
+  "body": {
+    "message": "Missing or invalid parameters",
+    "error": {
+      "user_id": [
+        "Required"
+      ]
+    }
+  }
+}
+2025-05-09 18:25:16 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details/1",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:25:16 warn: getUserById Validation failed:
+2025-05-09 18:25:16 info: {
+  "status": 400,
+  "body": {
+    "message": "Missing or invalid parameters",
+    "error": {
+      "user_id": [
+        "Required"
+      ]
+    }
+  }
+}
+2025-05-09 18:27:10 info: {
+  "method": "GET",
+  "url": "/api/v1/users/get_user_details/1",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:27:10 info: {
+  "status": 200,
+  "body": {
+    "data": {
+      "_id": "681de65897381bd6d1240eda",
+      "username": "jatin_super",
+      "role": "superadmin",
+      "first_name": "Jatin",
+      "last_name": "Walia",
+      "phone_number": "9690604811",
+      "created_at": "2025-05-09T11:26:16.230Z",
+      "user_id": 1,
+      "__v": 0
+    }
+  }
+}
+2025-05-09 18:29:32 info: {
+  "method": "PUT",
+  "url": "/api/v1/users/update_user/3",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:29:32 info: {
+  "status": 200,
+  "body": {
+    "message": "User updated successfully",
+    "data": {
+      "status": 1,
+      "_id": "681df31888b03af65e636912",
+      "username": "test_user",
+      "role": "user",
+      "first_name": "Test",
+      "last_name": "User",
+      "phone_number": "7248741289",
+      "created_at": "2025-05-09T12:20:40.032Z",
+      "user_id": 3,
+      "__v": 0
+    }
+  }
+}
+2025-05-09 18:30:36 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "new_admin",
+    "email": "newadmin@example.com",
+    "password": "Admin@1234",
+    "role": "admin",
+    "first_name": "John",
+    "last_name": "Doe",
+    "phone_number": "1234567890"
+  }
+}
+2025-05-09 18:30:36 info: {
+  "status": 401,
+  "body": {
+    "message": "Authentication token missing"
+  }
+}
+2025-05-09 18:30:52 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "new_admin",
+    "email": "newadmin@example.com",
+    "password": "Admin@1234",
+    "role": "admin",
+    "first_name": "John",
+    "last_name": "Doe",
+    "phone_number": "1234567890"
+  }
+}
+2025-05-09 18:30:52 info: {
+  "status": 200,
+  "body": {
+    "message": "User created successfully",
+    "data": {
+      "username": "new_admin",
+      "role": "admin",
+      "first_name": "John",
+      "last_name": "Doe",
+      "password": "$2b$10$3vKbFsSt233eoU8YUxolueRm3uClJgGayCxGcDTanx.ATXTofk8/m",
+      "phone_number": "1234567890",
+      "status": 1,
+      "_id": "681dfc842611509864f20b2a",
+      "created_at": "2025-05-09T13:00:52.653Z",
+      "user_id": 4,
+      "__v": 0
+    }
+  }
+}
+2025-05-09 18:31:31 info: {
+  "method": "PUT",
+  "url": "/api/v1/users/update_user/3",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "new_admin_user",
+    "email": "newadmin@datacultr.com",
+    "password": "Admin@12345",
+    "role": "admin",
+    "first_name": "John",
+    "last_name": "Doe",
+    "phone_number": "1234567890"
+  }
+}
+2025-05-09 18:31:32 info: {
+  "status": 200,
+  "body": {
+    "message": "User updated successfully",
+    "data": {
+      "status": 1,
+      "_id": "681df31888b03af65e636912",
+      "username": "new_admin_user",
+      "role": "admin",
+      "first_name": "John",
+      "last_name": "Doe",
+      "phone_number": "1234567890",
+      "created_at": "2025-05-09T12:20:40.032Z",
+      "user_id": 3,
+      "__v": 0
+    }
+  }
+}
+2025-05-09 18:32:37 info: {
+  "method": "PUT",
+  "url": "/api/v1/users/update_user/3",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "new_admin_user",
+    "email": "newadmin@datacultr.com",
+    "password": "Admin@12345",
+    "role": "admin",
+    "first_name": "John",
+    "last_name": "Doe",
+    "phone_number": "1234567890"
+  }
+}
+2025-05-09 18:32:37 info: {
+  "status": 200,
+  "body": {
+    "message": "User updated successfully",
+    "data": {
+      "status": 1,
+      "_id": "681df31888b03af65e636912",
+      "username": "new_admin_user",
+      "role": "admin",
+      "first_name": "John",
+      "last_name": "Doe",
+      "phone_number": "1234567890",
+      "created_at": "2025-05-09T12:20:40.032Z",
+      "user_id": 3,
+      "__v": 0,
+      "email": "newadmin@datacultr.com"
+    }
+  }
+}
+2025-05-09 18:33:24 info: {
+  "method": "PUT",
+  "url": "/api/v1/users/update_user/3",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "sahil_admin",
+    "email": "sahil_admin@datacultr.com",
+    "password": "Admin@12345",
+    "role": "admin",
+    "first_name": "Sahil",
+    "last_name": "Doe",
+    "phone_number": "1234567890"
+  }
+}
+2025-05-09 18:33:25 info: {
+  "status": 200,
+  "body": {
+    "message": "User updated successfully",
+    "data": {
+      "status": 1,
+      "_id": "681df31888b03af65e636912",
+      "username": "sahil_admin",
+      "role": "admin",
+      "first_name": "Sahil",
+      "last_name": "Doe",
+      "phone_number": "1234567890",
+      "created_at": "2025-05-09T12:20:40.032Z",
+      "user_id": 3,
+      "__v": 0,
+      "email": "sahil_admin@datacultr.com"
+    }
+  }
+}
+2025-05-09 18:34:24 info: {
+  "method": "PUT",
+  "url": "/api/v1/users/update_user/3",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "sahil_user",
+    "email": "sahil_user@datacultr.com",
+    "password": "Test@12345",
+    "role": "user",
+    "first_name": "Sahil",
+    "last_name": "Doe",
+    "phone_number": "1234567890"
+  }
+}
+2025-05-09 18:34:24 info: {
+  "status": 200,
+  "body": {
+    "message": "User updated successfully",
+    "data": {
+      "status": 1,
+      "_id": "681df31888b03af65e636912",
+      "username": "sahil_user",
+      "role": "user",
+      "first_name": "Sahil",
+      "last_name": "Doe",
+      "phone_number": "1234567890",
+      "created_at": "2025-05-09T12:20:40.032Z",
+      "user_id": 3,
+      "__v": 0,
+      "email": "sahil_user@datacultr.com"
+    }
+  }
+}
+2025-05-09 18:35:15 info: {
+  "method": "DELETE",
+  "url": "/api/v1/users/delete_user/4",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:35:15 info: {
+  "status": 200,
+  "body": {
+    "message": "User deleted successfully"
+  }
+}
+2025-05-09 18:35:26 info: {
+  "method": "DELETE",
+  "url": "/api/v1/users/delete_user/4",
+  "params": {},
+  "query": {}
+}
+2025-05-09 18:35:26 info: {
+  "status": 404,
+  "body": {
+    "message": "User not found"
+  }
+}
+2025-05-09 19:31:47 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 19:31:47 info: {
+  "status": 200,
+  "body": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTkzMDcsImV4cCI6MTc0Njg4NTcwN30.07W2jFGNb1u9i7xVKUjXxaIK_Ge4e5nEy1Dhq6ZGbFo",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTkzMDcsImV4cCI6MTc0NzQwNDEwN30.PQtEOD3FjB2VjLC30ASmEcSZcnCecNynCPjTmsjii-o"
+  }
+}
+2025-05-09 19:32:26 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 19:32:26 info: {
+  "status": 200,
+  "body": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTkzNDYsImV4cCI6MTc0Njg4NTc0Nn0.TqtAWzFkEUWtYv4GDOw3MbkOc9SC1GXfli8vsm6LpMI",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTkzNDYsImV4cCI6MTc0NzQwNDE0Nn0._bqB_Xe6Y2VlOLDyYQMX0RbB3kEQA0wA-0v0Lv7YNiM"
+  }
+}
+2025-05-09 19:34:00 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 19:34:00 info: {
+  "status": 200,
+  "body": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTk0NDAsImV4cCI6MTc0Njg4NTg0MH0.9E0KnTEV3JBaF9qMtu18c94F-iNQkL0ry1rZ38_Nylo",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTk0NDAsImV4cCI6MTc0NzQwNDI0MH0.K-EN6MUbpD245XtCwlKItGLqRMm6l6Tk0j-x5CII9go"
+  }
+}
+2025-05-09 19:37:45 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 19:37:45 info: {
+  "status": 200,
+  "body": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTk2NjUsImV4cCI6MTc0Njg4NjA2NX0.N-u3eVkbRAtW4LN8eiEuQeSUUR7JzFD1N8UZdECru0k",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTk2NjUsImV4cCI6MTc0NzQwNDQ2NX0.WHTrFH6-Z1hipHuOqkOjTCd2OCQ7q5QvWOhDmPpKA1o"
+  }
+}
+2025-05-09 19:38:00 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 19:38:00 info: {
+  "status": 200,
+  "body": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTk2ODAsImV4cCI6MTc0Njg4NjA4MH0.kSSyeaelEuQpEm5sG-zh8cTUi0MrbQOTHDA5P2TK_aE",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTk2ODAsImV4cCI6MTc0NzQwNDQ4MH0._8VOa_nqBwigONsnoHIhFXrjz6i50I92rDmPigBJvEI"
+  }
+}
+2025-05-09 19:38:43 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 19:38:43 info: {
+  "status": 400,
+  "body": {
+    "message": "Some exception occurred",
+    "error": "Cast to ObjectId failed for value \"1\" (type number) at path \"userId\" for model \"Session\""
+  }
+}
+2025-05-09 19:38:59 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 19:38:59 info: {
+  "status": 200,
+  "body": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTk3MzksImV4cCI6MTc0Njg4NjEzOX0.YBLiu1yQFDgjE1bepNp5HHwA9qpO7EmxEM8V-OK5Rrg",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTk3MzksImV4cCI6MTc0NzQwNDUzOX0.Q-MOegMWbsrXkREW31IkJdcwkfKOkachSjJxFJlDvao"
+  }
+}
+2025-05-09 19:43:00 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 19:43:00 info: {
+  "status": 200,
+  "body": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTk5ODAsImV4cCI6MTc0Njg4NjM4MH0.UmoUHqf6ixSI1Nwa9p4YGhMV5WsY3kptch4zgeHN6C0",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTk5ODAsImV4cCI6MTc0NzQwNDc4MH0.M_wA7TbiI6SkUnlLVyRN7uJ0LMvgdXCj9ioKQfs5lmI"
+  }
+}

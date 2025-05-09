@@ -22,7 +22,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     maxlength: 255,
   },
-  email_id: {
+  email: {
     type: String,
     maxlength: 512,
   },
@@ -33,6 +33,10 @@ const userSchema = new mongoose.Schema({
   phone_number: {
     type: String,
     maxlength: 255,
+  },
+  status: {
+    type: Number,
+    default: 1
   },
   created_at: {
     type: Date,
