@@ -1,0 +1,354 @@
+2025-05-09 16:49:16 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {}
+}
+2025-05-09 16:49:16 warn: createUser Validation failed:
+2025-05-09 16:49:16 info: {
+  "status": 400,
+  "body": {
+    "message": "Missing or invalid parameters",
+    "error": {}
+  }
+}
+2025-05-09 16:50:58 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "email": "jkw1434@gmail.com",
+    "first_name": "Jatin",
+    "last_name": "Walia",
+    "password": "Walia@123",
+    "role": "superadmin",
+    "phone_number": "9690604811"
+  }
+}
+2025-05-09 16:50:58 info: {
+  "status": 500,
+  "body": {
+    "message": "Internal server error"
+  }
+}
+2025-05-09 16:52:37 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "email": "jkw1434@gmail.com",
+    "first_name": "Jatin",
+    "last_name": "Walia",
+    "password": "Walia@123",
+    "role": "superadmin",
+    "phone_number": "9690604811"
+  }
+}
+2025-05-09 16:52:37 info: {
+  "status": 500,
+  "body": {
+    "message": "Internal server error"
+  }
+}
+2025-05-09 16:54:29 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "email": "jkw1434@gmail.com",
+    "first_name": "Jatin",
+    "last_name": "Walia",
+    "password": "Walia@123",
+    "role": "superadmin",
+    "phone_number": "9690604811"
+  }
+}
+2025-05-09 16:54:30 info: {
+  "status": 500,
+  "body": {
+    "message": "Internal server error",
+    "error": "User validation failed: role: Cast to Number failed for value \"superadmin\" (type string) at path \"role\""
+  }
+}
+2025-05-09 16:54:40 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "email": "jkw1434@gmail.com",
+    "first_name": "Jatin",
+    "last_name": "Walia",
+    "password": "Walia@123",
+    "role": 1,
+    "phone_number": "9690604811"
+  }
+}
+2025-05-09 16:54:40 warn: createUser Validation failed:
+2025-05-09 16:54:40 info: {
+  "status": 400,
+  "body": {
+    "message": "Missing or invalid parameters",
+    "error": {
+      "role": [
+        "Expected string, received number"
+      ]
+    }
+  }
+}
+2025-05-09 16:54:51 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "email": "jkw1434@gmail.com",
+    "first_name": "Jatin",
+    "last_name": "Walia",
+    "password": "Walia@123",
+    "role": "1",
+    "phone_number": "9690604811"
+  }
+}
+2025-05-09 16:54:51 warn: createUser Validation failed:
+2025-05-09 16:54:51 info: {
+  "status": 400,
+  "body": {
+    "message": "Missing or invalid parameters",
+    "error": {
+      "role": [
+        "String must contain at least 3 character(s)"
+      ]
+    }
+  }
+}
+2025-05-09 16:55:00 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "email": "jkw1434@gmail.com",
+    "first_name": "Jatin",
+    "last_name": "Walia",
+    "password": "Walia@123",
+    "role": "super",
+    "phone_number": "9690604811"
+  }
+}
+2025-05-09 16:55:01 info: {
+  "status": 500,
+  "body": {
+    "message": "Internal server error",
+    "error": "User validation failed: role: Cast to Number failed for value \"super\" (type string) at path \"role\""
+  }
+}
+2025-05-09 16:56:16 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "email": "jkw1434@gmail.com",
+    "first_name": "Jatin",
+    "last_name": "Walia",
+    "password": "Walia@123",
+    "role": "superadmin",
+    "phone_number": "9690604811"
+  }
+}
+2025-05-09 16:56:16 info: {
+  "status": 200,
+  "body": {
+    "user": {
+      "username": "jatin_super",
+      "role": "superadmin",
+      "first_name": "Jatin",
+      "last_name": "Walia",
+      "password": "$2b$10$2D88jf9QbINU0P9DWkDIruTZwligkL6UpFzmtvP1H1rXOzzgNY6bW",
+      "phone_number": "9690604811",
+      "_id": "681de65897381bd6d1240eda",
+      "created_at": "2025-05-09T11:26:16.230Z",
+      "user_id": 1,
+      "__v": 0
+    }
+  }
+}
+2025-05-09 17:08:28 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 17:08:28 info: {
+  "status": 200,
+  "body": {
+    "user": {
+      "id": "681de65897381bd6d1240eda",
+      "username": "jatin_super",
+      "role": "superadmin"
+    },
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWRlNjU4OTczODFiZDZkMTI0MGVkYSIsInJvbGUiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzQ2NzkwNzA4LCJleHAiOjE3NDY4NzcxMDh9.sqOzVAnKWAQpSPNlmIvqVj5kjHZ74sdtWDLnwsDx_Lc",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWRlNjU4OTczODFiZDZkMTI0MGVkYSIsInJvbGUiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzQ2NzkwNzA4LCJleHAiOjE3NDczOTU1MDh9.5joxKYNkxsgW63D-ohrsrRmH6LA_a24LzWy2HaHZqoc"
+  }
+}
+2025-05-09 17:08:55 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 17:08:56 info: {
+  "status": 200,
+  "body": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWRlNjU4OTczODFiZDZkMTI0MGVkYSIsInJvbGUiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzQ2NzkwNzM2LCJleHAiOjE3NDY4NzcxMzZ9.styhrp7-5qCy8iJuMyEhwAWv-yjkFJ1NPwDAv0GpRtc",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWRlNjU4OTczODFiZDZkMTI0MGVkYSIsInJvbGUiOiJzdXBlcmFkbWluIiwiaWF0IjoxNzQ2NzkwNzM2LCJleHAiOjE3NDczOTU1MzZ9.g6OTFSE8ye4M6d5JIdJRkwdLmRAle9XK3yQi1oYz4Wg"
+  }
+}
+2025-05-09 17:10:16 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 17:10:16 info: {
+  "status": 200,
+  "body": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTA4MTYsImV4cCI6MTc0Njg3NzIxNn0.gBKlFhEe-_nw2CZIEXAil--14Ga6GmzY6CE6670eb5c",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTA4MTYsImV4cCI6MTc0NzM5NTYxNn0.ZuKPjuj80wN8Tq4T_g5Fh96MLfkG8LkvSXKkCmj5irs"
+  }
+}
+2025-05-09 17:21:02 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "admin_user",
+    "email": "sachin.walia@gmail.com",
+    "first_name": "Admin",
+    "last_name": "User",
+    "password": "Test@123",
+    "role": "admin",
+    "phone_number": "7248744909"
+  }
+}
+2025-05-09 17:21:02 info: {
+  "status": 401,
+  "body": {
+    "message": "Authentication token missing"
+  }
+}
+2025-05-09 17:21:33 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "admin_user",
+    "email": "sachin.walia@gmail.com",
+    "first_name": "Admin",
+    "last_name": "User",
+    "password": "Test@123",
+    "role": "admin",
+    "phone_number": "7248744909"
+  }
+}
+2025-05-09 17:21:33 info: {
+  "status": 401,
+  "body": {
+    "message": "Authentication token missing"
+  }
+}
+2025-05-09 17:21:39 info: {
+  "method": "POST",
+  "url": "/api/v1/auth/login/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "jatin_super",
+    "password": "Walia@123"
+  }
+}
+2025-05-09 17:21:39 info: {
+  "status": 200,
+  "body": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTE0OTksImV4cCI6MTc0Njg3Nzg5OX0.cueUawDpp7m8HC78S29HS3wdQ7cqtkspcRtqX_Fr4xU",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE3NDY3OTE0OTksImV4cCI6MTc0NzM5NjI5OX0.pWOem0b3xDcNtyMfg4MxgsinnC98WIJZGUyGImVqkAs"
+  }
+}
+2025-05-09 17:21:51 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "admin_user",
+    "email": "sachin.walia@gmail.com",
+    "first_name": "Admin",
+    "last_name": "User",
+    "password": "Test@123",
+    "role": "admin",
+    "phone_number": "7248744909"
+  }
+}
+2025-05-09 17:21:51 info: {
+  "status": 403,
+  "body": {
+    "message": "Invalid token"
+  }
+}
+2025-05-09 17:22:22 info: {
+  "method": "POST",
+  "url": "/api/v1/users/create_user/",
+  "params": {},
+  "query": {},
+  "body": {
+    "username": "admin_user",
+    "email": "sachin.walia@gmail.com",
+    "first_name": "Admin",
+    "last_name": "User",
+    "password": "Test@123",
+    "role": "admin",
+    "phone_number": "7248744909"
+  }
+}
+2025-05-09 17:22:22 info: {
+  "status": 200,
+  "body": {
+    "user": {
+      "username": "admin_user",
+      "role": "admin",
+      "first_name": "Admin",
+      "last_name": "User",
+      "password": "$2b$10$1gvTILOD74985714zPvfNeqP/MuMcGuuSoOjaMRFV5tTq.AOIS..q",
+      "phone_number": "7248744909",
+      "_id": "681dec76243961b8a30c9931",
+      "created_at": "2025-05-09T11:52:22.410Z",
+      "user_id": 2,
+      "__v": 0
+    }
+  }
+}
